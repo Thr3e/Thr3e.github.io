@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@keyframes wrapAnimate {
+      0%{transform: translateX(0)}
+     10%{transform: translateX(-12px)}
+     20%{transform: translateX(0)}
+     30%{transform: translateX(12px)}
+     40%{transform: translateX(0)}
+     50%{transform: translateX(12px)}
+     60%{transform: translateX(0)}
+     70%{transform: translateX(-12px)}
+     80%{transform: translateX(0)}
+     90%{transform: translateX(12px)}
+    100%{transform: translateX(0)}
+}
+
+thr-tiptag {
+    display: block;
+    text-align: center;
+    color: #303841;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3338;
+}
+
+tiptag-wrap{
+    display: block;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    width: 320px;
+    border-radius: 1%;
+    transition: .15s all linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+}
+
+tiptag-wrap.appear{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+tiptag-wrap.close{
+    transform: translate(-50%, -100%);
+    opacity: 0;
+}
+
+tiptag-closeBtn {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+tiptag-title{
+    display: block;
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+tiptag-img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 30%;
+    padding-top: 30%;
+    background-position: center;
+    background-size: cover;
+}
+
+tiptag-content,
+tiptag-ipt {
+    display: block;
+    line-height: 30px;
+    word-wrap: break-word;
+    padding-bottom: 25px;
+}
+
+tiptag-btnbox{
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+    padding: 15px;
+    border-top: 1px solid #e2eff1;
+}
+
+tiptag-btn{
+    width: 40%;
+    cursor: pointer;
+    border-radius: 1%;
+}
+
+tiptag-Btn#THR-tiptag-conf-btn{
+    background: #e2eff1;
+    color : #fcfcfc;
+}
+
+tiptag-wrap input{
+    display: block;
+    width: 100%;
+    line-height: 28px;
+    outline: 0;
+    border: 1px solid #e2eff1;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+input.thr3e-uninput {
+    border-color: #BE3E3E !important;
+    animation: wrapAnimate .2s; 
+}
