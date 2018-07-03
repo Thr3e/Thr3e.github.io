@@ -1,8 +1,6 @@
 # Thr3e's TipTag : User Guide
 
----
-
----
+___
 
 #### 0.说明
 
@@ -141,5 +139,3 @@
 #### 5.在线示例
 
 [Thr3e's  Tiptag](https://thr3e.github.io/Thr3e_TipTag/)
-
----
