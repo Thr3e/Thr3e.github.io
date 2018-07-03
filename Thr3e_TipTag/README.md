@@ -1,11 +1,12 @@
 # Thr3e's TipTag : User Guide
----
+
+===
 
 #### 0.说明
 
 该插件是本人封装的一款完全由JavaScript编写的弹出框插件
 
--
+---
 
 #### 1.使用
 
@@ -13,7 +14,7 @@
 * 引入`THRTiptag.js`/`THRTiptag.css`文件
 * 调用语法：`new THRTiptag({ options… })`
 	
--
+---
 
 #### 2.参数说明
 <table>
@@ -71,7 +72,7 @@
   </tr>
 </table>
 
--
+---
 
 #### 3.代码示例
 
@@ -124,7 +125,7 @@
             }
         });
         
--
+---
 
 
 #### 4.特别的
@@ -133,10 +134,10 @@
 `message: "内容<span class='THR-highlight'>特别的提示信息</span>内容"`
 
 
--
+---
 
 #### 5.在线示例
 
 [Thr3e's  Tiptag](https://thr3e.github.io/Thr3e_TipTag/)
 
--
+---
