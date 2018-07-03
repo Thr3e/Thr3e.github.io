@@ -1,6 +1,8 @@
 # Thr3e's TipTag : User Guide
 
-===
+---
+
+---
 
 #### 0.说明
 
