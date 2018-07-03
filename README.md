@@ -1,10 +1,10 @@
-# Thr3e's web repo
+# Thr3e's Web Repo
 
-##### (不定时加入本人编写的网站或插件)
+*网站以及网页插件展示仓库*
 
 ## 已有插件：
 
-[Thr3e's tiptag](https://thr3e.github.io/Thr3eTipTag/)
+[Thr3e's Tiptag](https://thr3e.github.io/Thr3e_TipTag/)
 
 
 

@@ -7,6 +7,13 @@
         this.closeBtn  = null;
         this.mainWrap  = null;
         this.alertImg  = null;
+        this.colorStyle= {
+            "warning" : "#f23557",
+            "error"   : "#f23557",
+            "message" : "#00bbf0",
+            "doubt"   : "#ffc93c",
+            "correct" : "#52d681"
+        }
 
         //设置默认样式
         this.config = {
@@ -20,28 +27,20 @@
             "cancelCallBack" : "",
             "confCallBack"   : "",
             "iconURL"        : "",
-            "alertType"      : "",
-            "highlightColor" : "",
-            'colorStyle'     : {
-                "warning" : "#f23557",
-                "error"   : "#f23557",
-                "message" : "#00bbf0",
-                "doubt"   : "#ffc93c",
-                "correct" : "#52d681"
-            }
+            "alertType"      : "correct",
+            "highlightColor" : ""
         }
         // 扩展默认属性
         options && this.extend(this.config, options);
         // 初始化方法
         this.init();
         //设置样式
-        this.loadStyle(this.config.highlightColor || this.config.colorStyle[this.config.alertType]);
+        this.loadStyle(this.config.highlightColor || this.colorStyle[this.config.alertType]);
         // 事件添加
         this.confBtn   && this.addEvent(this.confBtn  , "click", this.btnClick.bind(this));
         this.cancelBtn && this.addEvent(this.cancelBtn, "click", this.btnClick.bind(this));
         this.closeBtn  && this.addEvent(this.closeBtn , "click", this.btnClick.bind(this));
 
-        //TODO:
         document.body.style.cssText = "overflow: hidden;";
         // 判断是否自动关闭
         this.config.autoClose && setTimeout(this.close, this.config.autoClose);
@@ -127,7 +126,7 @@
         },
         loadStyle : function(color){
             if(color) {
-                var hlSpan  = document.querySelectorAll(".THR-highlight"),
+                var hlSpan  = document.querySelectorAll("THR-tiptag .THR-highlight"),
                     confBtn = document.querySelector("#THR-tiptag-conf-btn");
                 if (confBtn) {
                     confBtn.style.background = color;
