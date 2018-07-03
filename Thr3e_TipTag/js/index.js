@@ -46,7 +46,7 @@
             type: "prompt",
             title: "验证提示",
             highlightColor:"#444",
-            iconURL:"../imgs/clock.jpg",
+            iconURL:"/Thr3e_TipTag/imgs/clock.jpg",
             placeholder: "请输入您的身份证号！",
             confCallBack: function (text) {
                 console.log(text);
