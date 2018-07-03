@@ -45,8 +45,7 @@
         new THRTipTag({
             type: "prompt",
             title: "验证提示",
-            // highlightColor:"#52d681",
-            iconURL:"/plugin/imgs/message.svg",
+            iconURL:"/Thr3e_TipTag/plugin/imgs/message.svg",
             placeholder: "请输入您的身份证号！",
             confCallBack: function (text) {
                 console.log(text);
