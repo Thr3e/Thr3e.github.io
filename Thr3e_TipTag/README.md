@@ -1,7 +1,5 @@
 # Thr3e's TipTag : User Guide
 
-___
-
 #### 0.说明
 
 该插件是本人封装的一款完全由JavaScript编写的弹出框插件
